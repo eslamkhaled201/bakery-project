@@ -1,0 +1,121 @@
+.header{
+    width: 100%;
+}
+.header__navBar{
+    background-color: rgba(255, 255, 255, 0.911);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 10px black ; 
+}
+.navBar__logo{
+    position: relative;
+    display: block;
+    height: 70%;
+    width: 10%;
+}
+.navBar__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_links{
+    display: flex;
+    height: 100%;
+    left: 4rem;
+    position: relative;
+    font-size: 2rem;
+    align-items: center;
+}
+.link{
+    height: 100%;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.link a{
+    top: 30%;
+    position: relative;
+    color: black;
+}
+.active{
+    position: relative;
+}
+.active::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #8e7754;
+}
+.toggler{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    right: 2rem;
+    top: 10px;
+    display: none;
+}
+.toggle-bar::before{
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 2.5px;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 10px;
+    top: -10px;
+    opacity: 1;
+}
+.toggle-bar{
+    border-radius: 5px;
+    position: relative;
+    width: 33px;
+    height: 1.5px;
+    background: rgba(0, 0, 0, 0.74);
+    
+}
+.toggle-bar::after{
+    position: absolute;
+    border-radius: 5px;
+    content: " ";
+    width: 33px;
+    height: 2.5px;
+    background: rgba(0, 0, 0, 0.74);
+    top: 10px;
+}
+.toggle::before{
+    animation-name: hidden;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.toggle{
+    animation-name: rotateMain;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.toggle::after{
+    animation-name: rotateAfter;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes hidden{
+    0%{  opacity: 1;}
+    100%{top: 0;opacity: 0;}
+}
+@keyframes rotateAfter{
+    0%{transform: rotate(0);}
+    50%{top:0;}
+    100%{top:0;transform: rotate(-90deg) ;}
+}
+@keyframes rotateMain {
+    0%{transform: rotate(0); }
+    100%{transform: rotate(-45deg);height: 2.5px;}
+}
