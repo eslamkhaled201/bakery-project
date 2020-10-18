@@ -76,13 +76,14 @@
 }
 .ancor-forworder{
     position: relative;
-    top: 20vh;
-    display: flex;
+    display: block;
     border:  2px solid #fff;
     width: 3.5rem;
     height: 55px;
     border-radius: 47%;
     justify-content: center;
+    background-color: gray;
+    margin-bottom: 30px;
 }
 .ancor-forworder span{
     position: absolute;
