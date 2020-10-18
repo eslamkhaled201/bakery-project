@@ -76,7 +76,7 @@
 }
 .ancor-forworder{
     position: relative;
-    display: block;
+    display: flex;
     border:  2px solid #fff;
     width: 3.5rem;
     height: 55px;
