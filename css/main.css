@@ -82,7 +82,7 @@
     height: 55px;
     border-radius: 47%;
     justify-content: center;
-    margin-bottom: 30px;
+    top: 10vh;
 }
 .ancor-forworder span{
     position: absolute;
