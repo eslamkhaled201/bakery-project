@@ -35,6 +35,7 @@
     height: 100%;
     display: inline-block;
     margin-right: 2rem;
+    
 }
 .link a{
     top: 30%;
@@ -43,10 +44,12 @@
 }
 .active{
     position: relative;
+    padding: 0 10px;
 }
 .active::before{
     position: absolute;
     content: " ";
+    left: 0;
     width: 100%;
     height: 2px;
     background-color: #8e7754;
@@ -91,18 +94,18 @@
 }
 .toggle::before{
     animation-name: hidden;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
 }
 .toggle{
     animation-name: rotateMain;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
 }
 .toggle::after{
     animation-name: rotateAfter;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
 }

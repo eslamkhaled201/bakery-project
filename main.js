@@ -12,3 +12,4 @@ document.querySelector('.toggler').addEventListener('click' ,()=>{
         navLinks.classList.add('open');
     }
 })
+/* fa-times */

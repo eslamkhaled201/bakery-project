@@ -1,7 +1,6 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: brown;
     min-height: 95vh;
     width: 100%;
 }
@@ -47,7 +46,7 @@ footer{
     text-transform: capitalize;
     font-size: 2rem;
     color: #fff;
-    margin:  0 0 2rem;
+  margin-bottom: 2rem;
 }
 .column p{
     color: #969696;
@@ -72,7 +71,7 @@ footer{
     top: 5%;
 }
 .contact-method i{
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 .contact-method a{
     color:#969696;
